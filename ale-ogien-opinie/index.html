@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ale Ogień - opinia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="screen">
+    <section class="card">
+      <div class="brand">🔥 ALE OGIEŃ</div>
+      <p class="label">Dzisiaj obsługiwał Cię</p>
+      <h1 id="waiterName">Kelner</h1>
+      <h2>Jak oceniasz swoją wizytę?</h2>
+
+      <div id="stars" class="stars" aria-label="Wybierz ocenę">
+        <button data-rating="1" aria-label="1 gwiazdka">★</button>
+        <button data-rating="2" aria-label="2 gwiazdki">★</button>
+        <button data-rating="3" aria-label="3 gwiazdki">★</button>
+        <button data-rating="4" aria-label="4 gwiazdki">★</button>
+        <button data-rating="5" aria-label="5 gwiazdek">★</button>
+      </div>
+
+      <p class="hint">Twoja opinia pomaga nam być jeszcze lepszymi.</p>
+
+      <div id="googleBox" class="box hidden">
+        <div class="heart">❤️</div>
+        <h2>Dziękujemy!</h2>
+        <p>Za chwilę przeniesiemy Cię do Google.</p>
+        <p class="hint">Miło nam będzie, jeśli wspomnisz kelnera w opinii.</p>
+      </div>
+
+      <div id="feedbackBox" class="box hidden">
+        <h2>Przykro nam 😔</h2>
+        <p>Napisz proszę, co możemy poprawić.</p>
+        <textarea id="comment" placeholder="Co było nie tak?"></textarea>
+        <button id="sendFeedback" class="mainBtn">Wyślij</button>
+        <p id="sentInfo" class="success hidden">Dziękujemy. Wiadomość została zapisana.</p>
+      </div>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
